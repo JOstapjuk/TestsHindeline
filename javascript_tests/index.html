@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Testing Playground</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        h1, h2 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        
+        .test-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        .test-section h3 {
+            color: #007bff;
+            margin-top: 0;
+        }
+        
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        
+        input, select, textarea {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin: 5px;
+        }
+        
+        .result {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            padding: 10px;
+            margin: 10px 0;
+            font-family: monospace;
+        }
+        
+        .success {
+            background-color: #d4edda;
+            border-color: #c3e6cb;
+            color: #155724;
+        }
+        
+        .error {
+            background-color: #f8d7da;
+            border-color: #f5c6cb;
+            color: #721c24;
+        }
+        
+        .test-output {
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            padding: 10px;
+            margin: 10px 0;
+            max-height: 300px;
+            overflow-y: auto;
+            font-family: monospace;
+            font-size: 12px;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .form-group {
+            margin: 10px 0;
+        }
+        
+        label {
+            display: inline-block;
+            width: 120px;
+            font-weight: bold;
+        }
+        
+        .todo-item {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            padding: 10px;
+            margin: 5px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .todo-item.completed {
+            background-color: #d4edda;
+            text-decoration: line-through;
+        }
+        
+        .todo-item button {
+            background-color: #dc3545;
+            padding: 5px 10px;
+            font-size: 12px;
+        }
+        
+        .todo-item button:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 JavaScript Testing Playground</h1>
+        <p>This page contains various interactive elements for testing JavaScript functionality. Use the test runner below to run automated tests.</p>
+        
+        <div class="test-section">
+            <h3>Test Runner</h3>
+            <button onclick="runAllTests()">Run All Tests</button>
+            <button onclick="clearTestResults()">Clear Results</button>
+            <div id="test-results" class="test-output hidden"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Basic Functionality Tests</h2>
+        
+        <div class="test-section">
+            <h3>Math Operations</h3>
+            <button onclick="testMathOperations()">Test Math Operations</button>
+            <div id="math-result" class="result"></div>
+        </div>
+        
+        <div class="test-section">
+            <h3>String Operations</h3>
+            <button onclick="testStringOperations()">Test String Operations</button>
+            <div id="string-result" class="result"></div>
+        </div>
+        
+        <div class="test-section">
+            <h3>Array Operations</h3>
+            <button onclick="testArrayOperations()">Test Array Operations</button>
+            <div id="array-result" class="result"></div>
+        </div>
+        
+        <div class="test-section">
+            <h3>Object Operations</h3>
+            <button onclick="testObjectOperations()">Test Object Operations</button>
+            <div id="object-result" class="result"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>DOM Interaction Tests</h2>
+        
+        <div class="test-section">
+            <h3>Element Manipulation</h3>
+            <button onclick="testElementManipulation()">Test Element Manipulation</button>
+            <div id="element-test">
+                <p id="test-paragraph">This paragraph will be modified by tests.</p>
+                <div id="test-div" style="width: 100px; height: 50px; background-color: blue;"></div>
+            </div>
+            <div id="element-result" class="result"></div>
+        </div>
+        
+        <div class="test-section">
+            <h3>Event Handling</h3>
+            <button onclick="testEventHandling()">Test Event Handling</button>
+            <div id="event-test">
+                <button id="click-test-btn">Click Me</button>
+                <input id="input-test" type="text" placeholder="Type something...">
+                <div id="event-log"></div>
+            </div>
+            <div id="event-result" class="result"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Form Testing</h2>
+        
+        <div class="test-section">
+            <h3>Form Validation</h3>
+            <form id="test-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="1" max="120">
+                </div>
+                <div class="form-group">
+                    <label for="country">Country:</label>
+                    <select id="country" name="country">
+                        <option value="">Select a country</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="DE">Germany</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="3"></textarea>
+                </div>
+                <button type="button" onclick="testFormValidation()">Test Form Validation</button>
+                <button type="button" onclick="testFormSubmission()">Test Form Submission</button>
+            </form>
+            <div id="form-result" class="result"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Todo Application</h2>
+        
+        <div class="test-section">
+            <h3>Todo List Functionality</h3>
+            <div>
+                <input type="text" id="todo-input" placeholder="Enter a new todo...">
+                <button onclick="addTodo()">Add Todo</button>
+                <button onclick="testTodoFunctionality()">Test Todo Functionality</button>
+            </div>
+            <div id="todo-list"></div>
+            <div id="todo-result" class="result"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Async Operations</h2>
+        
+        <div class="test-section">
+            <h3>Promise and Async/Await</h3>
+            <button onclick="testPromises()">Test Promises</button>
+            <button onclick="testAsyncAwait()">Test Async/Await</button>
+            <div id="async-result" class="result"></div>
+        </div>
+        
+        <div class="test-section">
+            <h3>Fetch API</h3>
+            <button onclick="testFetchAPI()">Test Fetch API</button>
+            <div id="fetch-result" class="result"></div>
+        </div>
+    </div>
+
+    <!-- Include test framework -->
+    <script src="test-framework.js"></script>
+    <script src="tests.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

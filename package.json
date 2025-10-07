@@ -1,0 +1,50 @@
+{
+  "name": "testing-playground",
+  "version": "1.0.0",
+  "description": "A comprehensive testing playground for Python pytest, Selenium, and JavaScript testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+    "install-browsers": "playwright install",
+    "python-test": "pytest python_tests/ -v",
+    "python-test-cov": "pytest python_tests/ --cov=python_tests --cov-report=html",
+    "selenium-test": "pytest selenium_tests/ -v",
+    "lint": "flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics",
+    "format": "black .",
+    "format-check": "black --check --diff .",
+    "sort-imports": "isort .",
+    "sort-imports-check": "isort --check-only --diff .",
+    "type-check": "mypy python_tests/ selenium_tests/ --ignore-missing-imports",
+    "security-scan": "bandit -r . && safety check",
+    "all-tests": "npm run python-test && npm run selenium-test && npm run test"
+  },
+  "keywords": [
+    "testing",
+    "pytest",
+    "selenium",
+    "playwright",
+    "javascript",
+    "python",
+    "automated-testing"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/testing-playground.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/testing-playground/issues"
+  },
+  "homepage": "https://github.com/yourusername/testing-playground#readme"
+}
