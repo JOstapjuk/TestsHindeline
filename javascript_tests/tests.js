@@ -118,12 +118,19 @@ test('Browser APIs should be available', () => {
 test('My custom math test', () => {
     assertEqual(15 + 25, 40);
     assertEqual(100 / 4, 25);
+    // mine
+    assertEqual(10 - 3, 7);
+    assertEqual(5 - 10, -5);
 });
 
 test('My custom string test', () => {
     const greeting = "Hello, World!";
     assertTrue(greeting.includes("Hello"));
     assertEqual(greeting.toUpperCase(), "HELLO, WORLD!");
+    //mine
+    const words = greeting.split(", ");
+    assertEqual(words[0], "Hello");
+    assertEqual(words[1], "World!");
 });
 
 test('My custom array test', () => {
@@ -131,12 +138,19 @@ test('My custom array test', () => {
     const doubled = numbers.map(x => x * 2);
     assertEqual(doubled[0], 2);
     assertEqual(doubled.length, 5);
+    //mine
+    const evens = numbers.filter(n => n % 2 === 0);
+    assertEqual(evens.length, 2);
+    assertEqual(evens[0], 2);
 });
 
 test('My custom object test', () => {
     const person = { name: "Alice", age: 25 };
     assertEqual(person.name, "Alice");
     assertEqual(person.age, 25);
+    //mine
+    person.city = "New York";
+    assertEqual(person.city, "New York");
 });
 
 // Write 6 more tests! Ideas:
@@ -148,27 +162,46 @@ test('My custom object test', () => {
 // - Test regular expressions
 // - Test error handling (try/catch)
 
-test('Your test 1', () => {
-    // TODO: Write your first custom test
-    // Ideas: Test subtraction, string split, array filter, etc.
+test('Subtraction and modulo operations', () => {
+    assertEqual(10 - 3, 7);
+    assertEqual(25 % 4, 1);
 });
 
-test('Your test 2', () => {
-    // TODO: Write your second custom test
+test('String split, join, and replace', () => {
+    const text = "apple,banana,orange";
+    const fruits = text.split(",");
+    assertEqual(fruits.length, 3);
+    assertEqual(fruits.join("-"), "apple-banana-orange");
+    assertEqual(text.replace("banana", "grape"), "apple,grape,orange");
 });
 
-test('Your test 3', () => {
-    // TODO: Write your third custom test
+test('Array filter', () => {
+    const numbers = [5, 2, 8, 1, 4];
+    const evens = numbers.filter(n => n % 2 === 0);
+    assertEqual(evens.length, 3);
 });
 
-test('Your test 4', () => {
-    // TODO: Write your fourth custom test
+test('Date operations', () => {
+    const today = new Date("2025-10-07");
+    assertEqual(today.getFullYear(), 2025);
+    assertEqual(today.getMonth(), 9);
+    assertEqual(today.getDate(), 7);
 });
 
-test('Your test 5', () => {
-    // TODO: Write your fifth custom test
+test('JSON stringify and parse', () => {
+    const obj = { x: 10, y: 20 };
+    const json = JSON.stringify(obj);
+    const parsed = JSON.parse(json);
+    assertEqual(parsed.x, 10);
+    assertEqual(parsed.y, 20);
 });
 
-test('Your test 6', () => {
-    // TODO: Write your sixth custom test
+test('Simple number string check', () => {
+    const str1 = "12";
+    const str2 = "1";
+    const str3 = "123";
+    
+    assertTrue(str1.length === 2);
+    assertFalse(str2.length === 2);
+    assertFalse(str3.length === 2); 
 });
