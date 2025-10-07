@@ -1,0 +1,857 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\playwright.config.js",
+    "rootDir": "C:/Users/jeliz/OneDrive/Desktop/testing_v2/javascript_tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 8
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results/results.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/jeliz/OneDrive/Desktop/testing_v2/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 8
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/jeliz/OneDrive/Desktop/testing_v2/javascript_tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/jeliz/OneDrive/Desktop/testing_v2/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 8
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/jeliz/OneDrive/Desktop/testing_v2/javascript_tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/jeliz/OneDrive/Desktop/testing_v2/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 8
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/jeliz/OneDrive/Desktop/testing_v2/javascript_tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/jeliz/OneDrive/Desktop/testing_v2/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 8
+        },
+        "id": "Mobile Chrome",
+        "name": "Mobile Chrome",
+        "testDir": "C:/Users/jeliz/OneDrive/Desktop/testing_v2/javascript_tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/jeliz/OneDrive/Desktop/testing_v2/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 8
+        },
+        "id": "Mobile Safari",
+        "name": "Mobile Safari",
+        "testDir": "C:/Users/jeliz/OneDrive/Desktop/testing_v2/javascript_tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.56.0",
+    "workers": 8,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "playwright-tests.spec.js",
+      "file": "playwright-tests.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "JavaScript Testing Playground",
+          "file": "playwright-tests.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should load the main page",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 647,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\nCall log:\n\u001b[2m  - navigating to \"file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\nCall log:\n\u001b[2m  - navigating to \"file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js:6:16",
+                        "location": {
+                          "file": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js",
+                          "column": 16,
+                          "line": 6
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'JavaScript Testing Playground'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'./index.html'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'should load the main page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js",
+                            "column": 16,
+                            "line": 6
+                          },
+                          "message": "Error: page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\nCall log:\n\u001b[2m  - navigating to \"file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'JavaScript Testing Playground'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'./index.html'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'should load the main page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js:6:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-07T14:02:30.823Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\test-results\\playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\test-results\\playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-chromium\\video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js",
+                        "column": 16,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "8de820c49346a9106307-472f296e5f28b29edffb",
+              "file": "playwright-tests.spec.js",
+              "line": 9,
+              "column": 3
+            },
+            {
+              "title": "should run math operations test",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 660,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\nCall log:\n\u001b[2m  - navigating to \"file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\nCall log:\n\u001b[2m  - navigating to \"file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js:6:16",
+                        "location": {
+                          "file": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js",
+                          "column": 16,
+                          "line": 6
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'JavaScript Testing Playground'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'./index.html'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'should load the main page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js",
+                            "column": 16,
+                            "line": 6
+                          },
+                          "message": "Error: page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\nCall log:\n\u001b[2m  - navigating to \"file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'JavaScript Testing Playground'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'./index.html'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'should load the main page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js:6:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-07T14:02:30.839Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\test-results\\playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\test-results\\playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-chromium\\video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js",
+                        "column": 16,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "8de820c49346a9106307-069655292004fd614801",
+              "file": "playwright-tests.spec.js",
+              "line": 14,
+              "column": 3
+            },
+            {
+              "title": "should load the main page",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 1626,
+                      "error": {
+                        "message": "Error: page.goto: NS_ERROR_FILE_NOT_FOUND\nCall log:\n\u001b[2m  - navigating to \"file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: NS_ERROR_FILE_NOT_FOUND\nCall log:\n\u001b[2m  - navigating to \"file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js:6:16",
+                        "location": {
+                          "file": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js",
+                          "column": 16,
+                          "line": 6
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'JavaScript Testing Playground'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'./index.html'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'should load the main page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js",
+                            "column": 16,
+                            "line": 6
+                          },
+                          "message": "Error: page.goto: NS_ERROR_FILE_NOT_FOUND\nCall log:\n\u001b[2m  - navigating to \"file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'JavaScript Testing Playground'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'./index.html'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'should load the main page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js:6:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-07T14:02:30.883Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\test-results\\playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\test-results\\playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\test-results\\playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-firefox\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js",
+                        "column": 16,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "8de820c49346a9106307-7639bf48a8ba35ffae79",
+              "file": "playwright-tests.spec.js",
+              "line": 9,
+              "column": 3
+            },
+            {
+              "title": "should run math operations test",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 1642,
+                      "error": {
+                        "message": "Error: page.goto: NS_ERROR_FILE_NOT_FOUND\nCall log:\n\u001b[2m  - navigating to \"file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: NS_ERROR_FILE_NOT_FOUND\nCall log:\n\u001b[2m  - navigating to \"file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js:6:16",
+                        "location": {
+                          "file": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js",
+                          "column": 16,
+                          "line": 6
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'JavaScript Testing Playground'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'./index.html'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'should load the main page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js",
+                            "column": 16,
+                            "line": 6
+                          },
+                          "message": "Error: page.goto: NS_ERROR_FILE_NOT_FOUND\nCall log:\n\u001b[2m  - navigating to \"file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'JavaScript Testing Playground'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'./index.html'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'should load the main page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js:6:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-07T14:02:30.879Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\test-results\\playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\test-results\\playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\test-results\\playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-firefox\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js",
+                        "column": 16,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "8de820c49346a9106307-43d9c17f8bfa09d63482",
+              "file": "playwright-tests.spec.js",
+              "line": 14,
+              "column": 3
+            },
+            {
+              "title": "should load the main page",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "failed",
+                      "duration": 913,
+                      "error": {
+                        "message": "Error: page.goto: Could not read a file:// file\nCall log:\n\u001b[2m  - navigating to \"file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: Could not read a file:// file\nCall log:\n\u001b[2m  - navigating to \"file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js:6:16",
+                        "location": {
+                          "file": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js",
+                          "column": 16,
+                          "line": 6
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'JavaScript Testing Playground'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'./index.html'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'should load the main page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js",
+                            "column": 16,
+                            "line": 6
+                          },
+                          "message": "Error: page.goto: Could not read a file:// file\nCall log:\n\u001b[2m  - navigating to \"file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'JavaScript Testing Playground'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'./index.html'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'should load the main page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js:6:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-07T14:02:30.906Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\test-results\\playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-webkit\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\test-results\\playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-webkit\\video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js",
+                        "column": 16,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "8de820c49346a9106307-0404edcd4089f06ac69a",
+              "file": "playwright-tests.spec.js",
+              "line": 9,
+              "column": 3
+            },
+            {
+              "title": "should run math operations test",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "failed",
+                      "duration": 918,
+                      "error": {
+                        "message": "Error: page.goto: Could not read a file:// file\nCall log:\n\u001b[2m  - navigating to \"file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: Could not read a file:// file\nCall log:\n\u001b[2m  - navigating to \"file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js:6:16",
+                        "location": {
+                          "file": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js",
+                          "column": 16,
+                          "line": 6
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'JavaScript Testing Playground'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'./index.html'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'should load the main page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js",
+                            "column": 16,
+                            "line": 6
+                          },
+                          "message": "Error: page.goto: Could not read a file:// file\nCall log:\n\u001b[2m  - navigating to \"file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'JavaScript Testing Playground'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'./index.html'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'should load the main page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js:6:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-07T14:02:30.824Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\test-results\\playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-webkit\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\test-results\\playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-webkit\\video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js",
+                        "column": 16,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "8de820c49346a9106307-3543e7549f2eaa167ba2",
+              "file": "playwright-tests.spec.js",
+              "line": 14,
+              "column": 3
+            },
+            {
+              "title": "should load the main page",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 6,
+                      "status": "failed",
+                      "duration": 635,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\nCall log:\n\u001b[2m  - navigating to \"file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\nCall log:\n\u001b[2m  - navigating to \"file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js:6:16",
+                        "location": {
+                          "file": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js",
+                          "column": 16,
+                          "line": 6
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'JavaScript Testing Playground'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'./index.html'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'should load the main page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js",
+                            "column": 16,
+                            "line": 6
+                          },
+                          "message": "Error: page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\nCall log:\n\u001b[2m  - navigating to \"file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'JavaScript Testing Playground'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'./index.html'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'should load the main page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js:6:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-07T14:02:30.857Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\test-results\\playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-Mobile-Chrome\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\test-results\\playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-Mobile-Chrome\\video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js",
+                        "column": 16,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "8de820c49346a9106307-90e51033915f03633f4f",
+              "file": "playwright-tests.spec.js",
+              "line": 9,
+              "column": 3
+            },
+            {
+              "title": "should run math operations test",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 7,
+                      "status": "failed",
+                      "duration": 586,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\nCall log:\n\u001b[2m  - navigating to \"file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\nCall log:\n\u001b[2m  - navigating to \"file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js:6:16",
+                        "location": {
+                          "file": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js",
+                          "column": 16,
+                          "line": 6
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'JavaScript Testing Playground'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'./index.html'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'should load the main page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js",
+                            "column": 16,
+                            "line": 6
+                          },
+                          "message": "Error: page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\nCall log:\n\u001b[2m  - navigating to \"file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'JavaScript Testing Playground'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'./index.html'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'should load the main page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js:6:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-07T14:02:30.886Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\test-results\\playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-Mobile-Chrome\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\test-results\\playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-Mobile-Chrome\\video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js",
+                        "column": 16,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "8de820c49346a9106307-e3e66d31a49c9ad21a76",
+              "file": "playwright-tests.spec.js",
+              "line": 14,
+              "column": 3
+            },
+            {
+              "title": "should load the main page",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 4,
+                      "status": "failed",
+                      "duration": 452,
+                      "error": {
+                        "message": "Error: page.goto: Could not read a file:// file\nCall log:\n\u001b[2m  - navigating to \"file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: Could not read a file:// file\nCall log:\n\u001b[2m  - navigating to \"file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js:6:16",
+                        "location": {
+                          "file": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js",
+                          "column": 16,
+                          "line": 6
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'JavaScript Testing Playground'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'./index.html'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'should load the main page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js",
+                            "column": 16,
+                            "line": 6
+                          },
+                          "message": "Error: page.goto: Could not read a file:// file\nCall log:\n\u001b[2m  - navigating to \"file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'JavaScript Testing Playground'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'./index.html'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'should load the main page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js:6:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-07T14:02:33.114Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\test-results\\playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-Mobile-Safari\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\test-results\\playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-Mobile-Safari\\video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js",
+                        "column": 16,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "8de820c49346a9106307-55b586f6d60eb88423f6",
+              "file": "playwright-tests.spec.js",
+              "line": 9,
+              "column": 3
+            },
+            {
+              "title": "should run math operations test",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 5,
+                      "status": "failed",
+                      "duration": 455,
+                      "error": {
+                        "message": "Error: page.goto: Could not read a file:// file\nCall log:\n\u001b[2m  - navigating to \"file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: Could not read a file:// file\nCall log:\n\u001b[2m  - navigating to \"file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js:6:16",
+                        "location": {
+                          "file": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js",
+                          "column": 16,
+                          "line": 6
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'JavaScript Testing Playground'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'./index.html'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'should load the main page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js",
+                            "column": 16,
+                            "line": 6
+                          },
+                          "message": "Error: page.goto: Could not read a file:// file\nCall log:\n\u001b[2m  - navigating to \"file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'JavaScript Testing Playground'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'./index.html'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'should load the main page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js:6:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-07T14:02:33.094Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\test-results\\playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-Mobile-Safari\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\test-results\\playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-Mobile-Safari\\video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\jeliz\\OneDrive\\Desktop\\testing_v2\\javascript_tests\\playwright-tests.spec.js",
+                        "column": 16,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "8de820c49346a9106307-4764e68b470dcde6f71b",
+              "file": "playwright-tests.spec.js",
+              "line": 14,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-10-07T14:02:29.795Z",
+    "duration": 5113.0689999999995,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 10,
+    "flaky": 0
+  }
+}

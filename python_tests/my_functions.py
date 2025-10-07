@@ -14,8 +14,7 @@ def add_numbers(a, b):
         add_numbers(2, 3) should return 5
         add_numbers(-1, 1) should return 0
     """
-    # TODO: Implement this function
-    pass
+    return a + b
 
 def multiply_numbers(a, b):
     """Multiply two numbers
@@ -31,8 +30,7 @@ def multiply_numbers(a, b):
         multiply_numbers(3, 4) should return 12
         multiply_numbers(0, 5) should return 0
     """
-    # TODO: Implement this function
-    pass
+    return a * b
 
 def is_even(number):
     """Check if a number is even
@@ -47,8 +45,7 @@ def is_even(number):
         is_even(4) should return True
         is_even(7) should return False
     """
-    # TODO: Implement this function
-    pass
+    return number % 2 == 0
 
 def reverse_string(text):
     """Reverse a string
@@ -63,8 +60,7 @@ def reverse_string(text):
         reverse_string("hello") should return "olleh"
         reverse_string("abc") should return "cba"
     """
-    # TODO: Implement this function
-    pass
+    return text[::-1]
 
 def count_vowels(text):
     """Count vowels in a string (a, e, i, o, u - case insensitive)
@@ -79,8 +75,7 @@ def count_vowels(text):
         count_vowels("hello") should return 2
         count_vowels("AEIOU") should return 5
     """
-    # TODO: Implement this function
-    pass
+    return sum(1 for i in text.lower() if i in "aeiou")
 
 def factorial(n):
     """Calculate factorial of n (n!)
@@ -95,8 +90,10 @@ def factorial(n):
         factorial(5) should return 120 (5! = 5*4*3*2*1)
         factorial(3) should return 6 (3! = 3*2*1)
     """
-    # TODO: Implement this function
-    pass
+    result = 1
+    for i in range(2, n + 1):
+        result *= i
+    return result
 
 def is_palindrome(text):
     """Check if text reads the same forwards and backwards
@@ -111,8 +108,8 @@ def is_palindrome(text):
         is_palindrome("racecar") should return True
         is_palindrome("hello") should return False
     """
-    # TODO: Implement this function
-    pass
+    cleaned = ''.join(i.lower() for i in text if i.isalnum())
+    return cleaned == cleaned[::-1]
 
 def find_max(numbers):
     """Find the largest number in a list
@@ -127,8 +124,7 @@ def find_max(numbers):
         find_max([1, 5, 3, 9, 2]) should return 9
         find_max([-1, -5, -3]) should return -1
     """
-    # TODO: Implement this function
-    pass
+    return max(numbers)
 
 def remove_duplicates(items):
     """Remove duplicate items from a list
@@ -143,8 +139,7 @@ def remove_duplicates(items):
         remove_duplicates([1, 2, 2, 3, 3, 3]) should return [1, 2, 3]
         remove_duplicates(['a', 'b', 'a', 'c']) should return ['a', 'b', 'c']
     """
-    # TODO: Implement this function
-    pass
+    return list(dict.fromkeys(items))
 
 def validate_email(email):
     """Check if email format is valid (contains @ and .)
@@ -159,5 +154,6 @@ def validate_email(email):
         validate_email("user@example.com") should return True
         validate_email("invalid-email") should return False
     """
-    # TODO: Implement this function
-    pass
+    if "@" not in email:
+        return False
+    return "." in email.split("@")[-1]

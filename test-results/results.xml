@@ -1,0 +1,370 @@
+<testsuites id="" name="" tests="10" failures="10" skipped="0" errors="0" time="5.113068999999999">
+<testsuite name="playwright-tests.spec.js" timestamp="2025-10-07T14:02:29.822Z" hostname="chromium" tests="2" failures="2" skipped="0" time="1.307" errors="0">
+<testcase name="JavaScript Testing Playground › should load the main page" classname="playwright-tests.spec.js" time="0.647">
+<failure message="playwright-tests.spec.js:9:3 should load the main page" type="FAILURE">
+<![CDATA[  [chromium] › playwright-tests.spec.js:9:3 › JavaScript Testing Playground › should load the main page 
+
+    Error: page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html
+    Call log:
+      - navigating to "file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html", waiting until "load"
+
+
+      4 | test.describe('JavaScript Testing Playground', () => {
+      5 |   test.beforeEach(async ({ page }) => {
+    > 6 |     await page.goto('./index.html');
+        |                ^
+      7 |   });
+      8 |
+      9 |   test('should load the main page', async ({ page }) => {
+        at C:\Users\jeliz\OneDrive\Desktop\testing_v2\javascript_tests\playwright-tests.spec.js:6:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-chromium\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="JavaScript Testing Playground › should run math operations test" classname="playwright-tests.spec.js" time="0.66">
+<failure message="playwright-tests.spec.js:14:3 should run math operations test" type="FAILURE">
+<![CDATA[  [chromium] › playwright-tests.spec.js:14:3 › JavaScript Testing Playground › should run math operations test 
+
+    Error: page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html
+    Call log:
+      - navigating to "file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html", waiting until "load"
+
+
+      4 | test.describe('JavaScript Testing Playground', () => {
+      5 |   test.beforeEach(async ({ page }) => {
+    > 6 |     await page.goto('./index.html');
+        |                ^
+      7 |   });
+      8 |
+      9 |   test('should load the main page', async ({ page }) => {
+        at C:\Users\jeliz\OneDrive\Desktop\testing_v2\javascript_tests\playwright-tests.spec.js:6:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-chromium\video.webm]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="playwright-tests.spec.js" timestamp="2025-10-07T14:02:29.822Z" hostname="firefox" tests="2" failures="2" skipped="0" time="3.268" errors="0">
+<testcase name="JavaScript Testing Playground › should load the main page" classname="playwright-tests.spec.js" time="1.626">
+<failure message="playwright-tests.spec.js:9:3 should load the main page" type="FAILURE">
+<![CDATA[  [firefox] › playwright-tests.spec.js:9:3 › JavaScript Testing Playground › should load the main page 
+
+    Error: page.goto: NS_ERROR_FILE_NOT_FOUND
+    Call log:
+      - navigating to "file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html", waiting until "load"
+
+
+      4 | test.describe('JavaScript Testing Playground', () => {
+      5 |   test.beforeEach(async ({ page }) => {
+    > 6 |     await page.goto('./index.html');
+        |                ^
+      7 |   });
+      8 |
+      9 |   test('should load the main page', async ({ page }) => {
+        at C:\Users\jeliz\OneDrive\Desktop\testing_v2\javascript_tests\playwright-tests.spec.js:6:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-firefox\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-firefox\video.webm]]
+
+[[ATTACHMENT|playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-firefox\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="JavaScript Testing Playground › should run math operations test" classname="playwright-tests.spec.js" time="1.642">
+<failure message="playwright-tests.spec.js:14:3 should run math operations test" type="FAILURE">
+<![CDATA[  [firefox] › playwright-tests.spec.js:14:3 › JavaScript Testing Playground › should run math operations test 
+
+    Error: page.goto: NS_ERROR_FILE_NOT_FOUND
+    Call log:
+      - navigating to "file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html", waiting until "load"
+
+
+      4 | test.describe('JavaScript Testing Playground', () => {
+      5 |   test.beforeEach(async ({ page }) => {
+    > 6 |     await page.goto('./index.html');
+        |                ^
+      7 |   });
+      8 |
+      9 |   test('should load the main page', async ({ page }) => {
+        at C:\Users\jeliz\OneDrive\Desktop\testing_v2\javascript_tests\playwright-tests.spec.js:6:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-firefox\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-firefox\video.webm]]
+
+[[ATTACHMENT|playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-firefox\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="playwright-tests.spec.js" timestamp="2025-10-07T14:02:29.822Z" hostname="webkit" tests="2" failures="2" skipped="0" time="1.831" errors="0">
+<testcase name="JavaScript Testing Playground › should load the main page" classname="playwright-tests.spec.js" time="0.913">
+<failure message="playwright-tests.spec.js:9:3 should load the main page" type="FAILURE">
+<![CDATA[  [webkit] › playwright-tests.spec.js:9:3 › JavaScript Testing Playground › should load the main page 
+
+    Error: page.goto: Could not read a file:// file
+    Call log:
+      - navigating to "file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html", waiting until "load"
+
+
+      4 | test.describe('JavaScript Testing Playground', () => {
+      5 |   test.beforeEach(async ({ page }) => {
+    > 6 |     await page.goto('./index.html');
+        |                ^
+      7 |   });
+      8 |
+      9 |   test('should load the main page', async ({ page }) => {
+        at C:\Users\jeliz\OneDrive\Desktop\testing_v2\javascript_tests\playwright-tests.spec.js:6:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-webkit\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-webkit\test-failed-1.png]]
+
+[[ATTACHMENT|playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-webkit\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="JavaScript Testing Playground › should run math operations test" classname="playwright-tests.spec.js" time="0.918">
+<failure message="playwright-tests.spec.js:14:3 should run math operations test" type="FAILURE">
+<![CDATA[  [webkit] › playwright-tests.spec.js:14:3 › JavaScript Testing Playground › should run math operations test 
+
+    Error: page.goto: Could not read a file:// file
+    Call log:
+      - navigating to "file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html", waiting until "load"
+
+
+      4 | test.describe('JavaScript Testing Playground', () => {
+      5 |   test.beforeEach(async ({ page }) => {
+    > 6 |     await page.goto('./index.html');
+        |                ^
+      7 |   });
+      8 |
+      9 |   test('should load the main page', async ({ page }) => {
+        at C:\Users\jeliz\OneDrive\Desktop\testing_v2\javascript_tests\playwright-tests.spec.js:6:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-webkit\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-webkit\test-failed-1.png]]
+
+[[ATTACHMENT|playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-webkit\video.webm]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="playwright-tests.spec.js" timestamp="2025-10-07T14:02:29.822Z" hostname="Mobile Chrome" tests="2" failures="2" skipped="0" time="1.221" errors="0">
+<testcase name="JavaScript Testing Playground › should load the main page" classname="playwright-tests.spec.js" time="0.635">
+<failure message="playwright-tests.spec.js:9:3 should load the main page" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › playwright-tests.spec.js:9:3 › JavaScript Testing Playground › should load the main page 
+
+    Error: page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html
+    Call log:
+      - navigating to "file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html", waiting until "load"
+
+
+      4 | test.describe('JavaScript Testing Playground', () => {
+      5 |   test.beforeEach(async ({ page }) => {
+    > 6 |     await page.goto('./index.html');
+        |                ^
+      7 |   });
+      8 |
+      9 |   test('should load the main page', async ({ page }) => {
+        at C:\Users\jeliz\OneDrive\Desktop\testing_v2\javascript_tests\playwright-tests.spec.js:6:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-Mobile-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-Mobile-Chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-Mobile-Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-Mobile-Chrome\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="JavaScript Testing Playground › should run math operations test" classname="playwright-tests.spec.js" time="0.586">
+<failure message="playwright-tests.spec.js:14:3 should run math operations test" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › playwright-tests.spec.js:14:3 › JavaScript Testing Playground › should run math operations test 
+
+    Error: page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html
+    Call log:
+      - navigating to "file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html", waiting until "load"
+
+
+      4 | test.describe('JavaScript Testing Playground', () => {
+      5 |   test.beforeEach(async ({ page }) => {
+    > 6 |     await page.goto('./index.html');
+        |                ^
+      7 |   });
+      8 |
+      9 |   test('should load the main page', async ({ page }) => {
+        at C:\Users\jeliz\OneDrive\Desktop\testing_v2\javascript_tests\playwright-tests.spec.js:6:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-Mobile-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-Mobile-Chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-Mobile-Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-Mobile-Chrome\video.webm]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="playwright-tests.spec.js" timestamp="2025-10-07T14:02:29.822Z" hostname="Mobile Safari" tests="2" failures="2" skipped="0" time="0.907" errors="0">
+<testcase name="JavaScript Testing Playground › should load the main page" classname="playwright-tests.spec.js" time="0.452">
+<failure message="playwright-tests.spec.js:9:3 should load the main page" type="FAILURE">
+<![CDATA[  [Mobile Safari] › playwright-tests.spec.js:9:3 › JavaScript Testing Playground › should load the main page 
+
+    Error: page.goto: Could not read a file:// file
+    Call log:
+      - navigating to "file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html", waiting until "load"
+
+
+      4 | test.describe('JavaScript Testing Playground', () => {
+      5 |   test.beforeEach(async ({ page }) => {
+    > 6 |     await page.goto('./index.html');
+        |                ^
+      7 |   });
+      8 |
+      9 |   test('should load the main page', async ({ page }) => {
+        at C:\Users\jeliz\OneDrive\Desktop\testing_v2\javascript_tests\playwright-tests.spec.js:6:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-Mobile-Safari\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-Mobile-Safari\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-Mobile-Safari\test-failed-1.png]]
+
+[[ATTACHMENT|playwright-tests-JavaScrip-2d781-d-should-load-the-main-page-Mobile-Safari\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="JavaScript Testing Playground › should run math operations test" classname="playwright-tests.spec.js" time="0.455">
+<failure message="playwright-tests.spec.js:14:3 should run math operations test" type="FAILURE">
+<![CDATA[  [Mobile Safari] › playwright-tests.spec.js:14:3 › JavaScript Testing Playground › should run math operations test 
+
+    Error: page.goto: Could not read a file:// file
+    Call log:
+      - navigating to "file:///C:/Users/jeliz/OneDrive/Desktop/testing_v2/index.html", waiting until "load"
+
+
+      4 | test.describe('JavaScript Testing Playground', () => {
+      5 |   test.beforeEach(async ({ page }) => {
+    > 6 |     await page.goto('./index.html');
+        |                ^
+      7 |   });
+      8 |
+      9 |   test('should load the main page', async ({ page }) => {
+        at C:\Users\jeliz\OneDrive\Desktop\testing_v2\javascript_tests\playwright-tests.spec.js:6:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-Mobile-Safari\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-Mobile-Safari\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-Mobile-Safari\test-failed-1.png]]
+
+[[ATTACHMENT|playwright-tests-JavaScrip-7588d-ld-run-math-operations-test-Mobile-Safari\video.webm]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

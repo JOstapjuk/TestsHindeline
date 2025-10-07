@@ -26,7 +26,11 @@ def test_is_even():
     # - Odd numbers (3, 5, 7)
     # - Zero (is 0 even or odd?)
     # - Negative numbers
-    pass
+    assert is_even(4) is True
+    assert is_even(0) is True
+    assert is_even(-2) is True
+    assert is_even(3) is False
+    assert is_even(-5) is False
 
 def test_reverse_string():
     """Test string reversal"""
@@ -36,7 +40,10 @@ def test_reverse_string():
     # - Single character ("a")
     # - Empty string ("")
     # - Strings with spaces
-    pass
+    assert reverse_string("hello") == "olleh"
+    assert reverse_string("a") == "a"
+    assert reverse_string("") == ""
+    assert reverse_string("abc def") == "fed cba"
 
 def test_count_vowels():
     """Test vowel counting"""
@@ -46,7 +53,11 @@ def test_count_vowels():
     # - Strings with no vowels ("xyz", "123")
     # - Mixed case ("Hello World")
     # - Empty string
-    pass
+    assert count_vowels("hello") == 2
+    assert count_vowels("AEIOU") == 5
+    assert count_vowels("xyz") == 0
+    assert count_vowels("Hello World") == 3
+    assert count_vowels("") == 0
 
 def test_factorial():
     """Test factorial calculation"""
@@ -56,7 +67,10 @@ def test_factorial():
     # - Zero (0! = 1)
     # - One (1! = 1)
     # - What happens with negative numbers?
-    pass
+    assert factorial(0) == 1
+    assert factorial(1) == 1
+    assert factorial(3) == 6
+    assert factorial(5) == 120
 
 def test_is_palindrome():
     """Test palindrome checking"""
@@ -66,7 +80,13 @@ def test_is_palindrome():
     # - Not palindromes ("hello", "abc")
     # - Empty string
     # - Single character
-    pass
+    assert is_palindrome("racecar") is True
+    assert is_palindrome("level") is True
+    assert is_palindrome("a") is True
+    assert is_palindrome("") is True
+    assert is_palindrome("hello") is False
+    assert is_palindrome("abc") is False
+    assert is_palindrome("A man, a plan, a canal, Panama") is True
 
 def test_find_max():
     """Test finding maximum value"""
@@ -77,7 +97,10 @@ def test_find_max():
     # - Mixed positive and negative
     # - Single element list
     # - What happens with empty list?
-    pass
+    assert find_max([1, 2, 3, 4, 5]) == 5
+    assert find_max([-1, -2, -3]) == -1
+    assert find_max([3, -5, 10, 0]) == 10
+    assert find_max([42]) == 42
 
 def test_remove_duplicates():
     """Test removing duplicates"""
@@ -88,7 +111,11 @@ def test_remove_duplicates():
     # - Empty list
     # - Single element
     # - Different data types (strings, numbers)
-    pass
+    assert remove_duplicates([1,2,2,3]) == [1,2,3]
+    assert remove_duplicates([1,2,3]) == [1,2,3]
+    assert remove_duplicates([]) == []
+    assert remove_duplicates([5]) == [5]
+    assert remove_duplicates(["a","b","a"]) == ["a","b"]
 
 def test_validate_email():
     """Test email validation"""
@@ -97,7 +124,11 @@ def test_validate_email():
     # - Valid emails ("user@example.com", "test@domain.org")
     # - Invalid emails (missing @, missing ., empty string)
     # - Edge cases (multiple @, spaces, etc.)
-    pass
+    assert validate_email("user@example.com") is True
+    assert validate_email("test@domain.org") is True
+    assert validate_email("invalid-email") is False
+    assert validate_email("user@domain") is False
+    assert validate_email("") is False
 
 # Bonus: Write some edge case tests
 def test_edge_cases():
