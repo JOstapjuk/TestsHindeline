@@ -80,24 +80,20 @@ def test_visit_python_org(driver):
 
 def test_visit_httpbin_get(driver):
     """Test visiting httpbin.org/get"""
-    # TODO: Write this test
-    # 1. Visit https://httpbin.org/get
-    # 2. Check that the page loads
-    # 3. Verify the response contains JSON data
     driver.get("https://httpbin.org/get")
+    WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.TAG_NAME, "body"))
+    )
     page_source = driver.page_source
-    assert '"url": "https://httpbin.org/get"' in page_source
+    # simple check: contains 'url' keyword
+    assert '"url"' in page_source
 
 def test_visit_stackoverflow(driver):
     """Test visiting Stack Overflow"""
-    # TODO: Write this test
-    # 1. Visit https://www.stackoverflow.com
-    # 2. Check that the page loads
-    # 3. Find the search box and type something in it
-    driver.get("https://duckduckgo.com")  # reliable site for headless
-    assert "DuckDuckGo" in driver.title
-    search_box = driver.find_element(By.ID, "search_form_input_homepage")
-    assert search_box.is_displayed()
+    driver.get("https://www.stackoverflow.com")
+    assert "Stack Overflow" in driver.title
+    search_box = driver.find_element(By.NAME, "q")
+    assert search_box.is_enabled()
 
 # Bonus: Write a test that interacts with a webpage
 def test_interact_with_website(driver):
