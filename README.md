@@ -55,17 +55,16 @@ A complete testing environment for Python pytest, Selenium web automation, JavaS
 ```
 testing_v2/
 ├── python_tests/           # Python pytest tests
-│   ├── test_basic.py      # Basic operations testing
-│   └── test_web_scraping.py # HTTP requests & HTML parsing
+│   ├── test_basic.py      # Basic operations testing (2 examples)
+│   └── test_web_scraping.py # HTTP requests & HTML parsing (2 examples)
 ├── selenium_tests/         # Selenium web automation
-│   ├── test_selenium_basic.py    # Basic web navigation
-│   └── test_selenium_advanced.py # Advanced interactions
+│   └── test_selenium_basic.py # Basic web navigation (2 examples)
 ├── javascript_tests/       # JavaScript testing environment
 │   ├── index.html         # Interactive testing playground
 │   ├── test-framework.js  # Custom JavaScript test framework
-│   ├── tests.js          # Comprehensive test suite
+│   ├── tests.js          # Simple test suite (2 examples per category)
 │   ├── app.js            # Application logic
-│   └── playwright-tests.spec.js # Playwright browser tests
+│   └── playwright-tests.spec.js # Playwright browser tests (2 examples)
 ├── .github/workflows/     # GitHub Actions CI/CD
 │   └── test.yml          # Main automated testing pipeline
 ├── requirements.txt       # Python dependencies
@@ -163,14 +162,14 @@ The project includes a comprehensive GitHub Actions workflow that:
 4. Try modifying existing tests to understand how they work
 
 ### For Intermediate Users
-1. Explore advanced Selenium features in `test_selenium_advanced.py`
+1. Explore Selenium features in `test_selenium_basic.py`
 2. Learn about test fixtures and parametrization
 3. Experiment with GitHub Actions workflows
 4. Practice writing tests for your own code
 
 ### For Advanced Users
 1. Customize the CI/CD pipeline for your needs
-2. Add performance testing and monitoring
+2. Add more test examples and scenarios
 3. Implement advanced test data management strategies
 4. Explore test automation best practices
 
