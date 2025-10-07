@@ -111,3 +111,64 @@ test('Browser APIs should be available', () => {
     assertNotNull(console.log);
     assertTrue(typeof console.log === "function");
 });
+
+// TODO: Add your own JavaScript tests here!
+// Write 8-10 tests that explore different JavaScript features
+
+test('My custom math test', () => {
+    assertEqual(15 + 25, 40);
+    assertEqual(100 / 4, 25);
+});
+
+test('My custom string test', () => {
+    const greeting = "Hello, World!";
+    assertTrue(greeting.includes("Hello"));
+    assertEqual(greeting.toUpperCase(), "HELLO, WORLD!");
+});
+
+test('My custom array test', () => {
+    const numbers = [1, 2, 3, 4, 5];
+    const doubled = numbers.map(x => x * 2);
+    assertEqual(doubled[0], 2);
+    assertEqual(doubled.length, 5);
+});
+
+test('My custom object test', () => {
+    const person = { name: "Alice", age: 25 };
+    assertEqual(person.name, "Alice");
+    assertEqual(person.age, 25);
+});
+
+// Write 6 more tests! Ideas:
+// - Test more math operations (subtraction, multiplication, modulo)
+// - Test string methods (split, join, replace, substring)
+// - Test array methods (filter, reduce, sort, concat)
+// - Test date operations
+// - Test JSON operations (stringify, parse)
+// - Test regular expressions
+// - Test error handling (try/catch)
+
+test('Your test 1', () => {
+    // TODO: Write your first custom test
+    // Ideas: Test subtraction, string split, array filter, etc.
+});
+
+test('Your test 2', () => {
+    // TODO: Write your second custom test
+});
+
+test('Your test 3', () => {
+    // TODO: Write your third custom test
+});
+
+test('Your test 4', () => {
+    // TODO: Write your fourth custom test
+});
+
+test('Your test 5', () => {
+    // TODO: Write your fifth custom test
+});
+
+test('Your test 6', () => {
+    // TODO: Write your sixth custom test
+});

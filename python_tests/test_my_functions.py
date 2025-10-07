@@ -1,0 +1,109 @@
+# Test My Functions - Write tests for your functions!
+
+import pytest
+from my_functions import *
+
+def test_add_numbers():
+    """Test adding numbers"""
+    assert add_numbers(2, 3) == 5
+    assert add_numbers(-1, 1) == 0
+    assert add_numbers(0, 0) == 0
+
+def test_multiply_numbers():
+    """Test multiplying numbers"""
+    assert multiply_numbers(3, 4) == 12
+    assert multiply_numbers(0, 5) == 0
+    assert multiply_numbers(-2, 3) == -6
+
+# TODO: Write tests for the remaining functions!
+# You need to write tests for 8 more functions
+
+def test_is_even():
+    """Test even number checking"""
+    # TODO: Write tests for is_even()
+    # Test cases to consider:
+    # - Even numbers (4, 6, 8)
+    # - Odd numbers (3, 5, 7)
+    # - Zero (is 0 even or odd?)
+    # - Negative numbers
+    pass
+
+def test_reverse_string():
+    """Test string reversal"""
+    # TODO: Write tests for reverse_string()
+    # Test cases to consider:
+    # - Simple strings ("hello", "abc")
+    # - Single character ("a")
+    # - Empty string ("")
+    # - Strings with spaces
+    pass
+
+def test_count_vowels():
+    """Test vowel counting"""
+    # TODO: Write tests for count_vowels()
+    # Test cases to consider:
+    # - Strings with vowels ("hello", "AEIOU")
+    # - Strings with no vowels ("xyz", "123")
+    # - Mixed case ("Hello World")
+    # - Empty string
+    pass
+
+def test_factorial():
+    """Test factorial calculation"""
+    # TODO: Write tests for factorial()
+    # Test cases to consider:
+    # - Small numbers (3!, 4!, 5!)
+    # - Zero (0! = 1)
+    # - One (1! = 1)
+    # - What happens with negative numbers?
+    pass
+
+def test_is_palindrome():
+    """Test palindrome checking"""
+    # TODO: Write tests for is_palindrome()
+    # Test cases to consider:
+    # - Palindromes ("racecar", "level", "a")
+    # - Not palindromes ("hello", "abc")
+    # - Empty string
+    # - Single character
+    pass
+
+def test_find_max():
+    """Test finding maximum value"""
+    # TODO: Write tests for find_max()
+    # Test cases to consider:
+    # - Lists with positive numbers
+    # - Lists with negative numbers
+    # - Mixed positive and negative
+    # - Single element list
+    # - What happens with empty list?
+    pass
+
+def test_remove_duplicates():
+    """Test removing duplicates"""
+    # TODO: Write tests for remove_duplicates()
+    # Test cases to consider:
+    # - Lists with duplicates
+    # - Lists with no duplicates
+    # - Empty list
+    # - Single element
+    # - Different data types (strings, numbers)
+    pass
+
+def test_validate_email():
+    """Test email validation"""
+    # TODO: Write tests for validate_email()
+    # Test cases to consider:
+    # - Valid emails ("user@example.com", "test@domain.org")
+    # - Invalid emails (missing @, missing ., empty string)
+    # - Edge cases (multiple @, spaces, etc.)
+    pass
+
+# Bonus: Write some edge case tests
+def test_edge_cases():
+    """Test edge cases and error handling"""
+    # TODO: What edge cases can you think of?
+    # - What happens with very large numbers?
+    # - What happens with special characters?
+    # - What happens with None or empty inputs?
+    pass
